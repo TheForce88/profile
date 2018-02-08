@@ -1,63 +1,65 @@
-// //jQuery is required to run this code
-// $( document ).ready(function() {
+// var pieces = 70,
+//     speed = 1,
+//     pieceW = 30,
+//     pieceH = 30;
 //
-//     scaleVideoContainer();
 //
-//     initBannerVideoSize('.video-container .poster img');
-//     initBannerVideoSize('.video-container .filter');
-//     initBannerVideoSize('.video-container video');
+// for (var i = pieces - 1; i >= 0; i--) {
+//   $('#popup').prepend('<div class="piece" style="width:'+pieceW+'px; height:'+pieceH+'px"></div>');
+// };
 //
-//     $(window).on('resize', function() {
-//         scaleVideoContainer();
-//         scaleBannerVideoSize('.video-container .poster img');
-//         scaleBannerVideoSize('.video-container .filter');
-//         scaleBannerVideoSize('.video-container video');
+// function breakGlass(from){
+//   if (from === "reverse"){
+//     $('.piece').each(function(){
+//       TweenLite.to($(this), speed, {x:0, y:0, rotationX:0, rotationY:0, opacity: 1, z: 0});
+//       TweenLite.to($('#popup h1'),0.2,{opacity:1, delay: speed});
 //     });
+//     return;
+//   }
 //
+//   if(!from){
+//     TweenLite.to($('#popup h1'),0.2,{opacity:0});
+//   } else {
+//     TweenLite.from($('#popup h1'),0.5,{opacity:0, delay: speed});
+//   }
+//
+//   $('.piece').each(function(){
+//     var distX = getRandomArbitrary(-250, 250),
+//         distY = getRandomArbitrary(-250, 250),
+//         rotY  = getRandomArbitrary(-720, 720),
+//         rotX  = getRandomArbitrary(-720, 720),
+//         z = getRandomArbitrary(-500, 500);
+//
+//     if(!from){
+//       TweenLite.to($(this), speed, {x:distX, y:distY, rotationX:rotX, rotationY:rotY, opacity: 0, z: z});
+//     } else {
+//       TweenLite.from($(this), speed, {x:distX, y:distY, rotationX:rotX, rotationY:rotY, opacity: 0, z: z});
+//     }
+//   });
+// }
+//
+// function getRandomArbitrary(min, max) {
+//   return Math.random() * (max - min) + min;
+// }
+//
+//
+// $('.piece, h1').click(function(){
+//   breakGlass();
+// });
+// $('.reverse').click(function(){
+//   breakGlass('reverse');
 // });
 //
-// function scaleVideoContainer() {
-//
-//     var height = $(window).height() + 5;
-//     var unitHeight = parseInt(height) + 'px';
-//     $('.homepage-hero-module').css('height',unitHeight);
-//
-// }
-//
-// function initBannerVideoSize(element){
-//
-//     $(element).each(function(){
-//         $(this).data('height', $(this).height());
-//         $(this).data('width', $(this).width());
-//     });
-//
-//     scaleBannerVideoSize(element);
-//
-// }
-//
-// function scaleBannerVideoSize(element){
-//
-//     var windowWidth = $(window).width(),
-//     windowHeight = $(window).height() + 5,
-//     videoWidth,
-//     videoHeight;
-//
-//     // console.log(windowHeight);
-//
-//     $(element).each(function(){
-//         var videoAspectRatio = $(this).data('height')/$(this).data('width');
-//
-//         $(this).width(windowWidth);
-//
-//         if(windowWidth < 1000){
-//             videoHeight = windowHeight;
-//             videoWidth = videoHeight / videoAspectRatio;
-//             $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
-//
-//             $(this).width(videoWidth).height(videoHeight);
-//         }
-//
-//         $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-//
-//     });
-// }
+// breakGlass(true);
+
+var i = 0;
+var txt = 'Hello World...'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("welcome").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
