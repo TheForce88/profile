@@ -30,6 +30,14 @@ $( document ).ready(function() {
     $(".sub-tools").hide();
     $(".sub-sport").hide();
 
+    // $("#languages").onmouseover = function() {
+    //   mouseOver();
+    // });
+
+    // function mouseOver() {
+    //   $("sub-lang").fadeIn(900);
+    // };
+
     $("#languages").hover(function() {
       $(".sub-lang").fadeToggle(900,"linear");
     });
