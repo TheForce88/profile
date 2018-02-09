@@ -5,15 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Welcome</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet'>
+  <link rel="stylesheet" href="css/fontawesome/fontawesome.css">
+  <link rel="stylesheet" href="css/welcome.css">
+  <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script src="js/welcome.js" charset="utf-8"></script>
 </head>
-<header>
-  <article>
-    <p>placeholder</p>
-    <button onclick="typeWriter()">Click me</button>
-    <p id="welcome"></p>
-  </article>
-</header>
+
 <body>
+  <header>
+    <article>
+      <button onclick="typeWriter()">Click me</button>
+      <p id="welcome"></p>
+    </article>
+  </header>
+
+  <nav></nav>
+
+  <div class="grid-wrapper articles">
+    <article class="col-third">
+        <h2>Skills</h2>
+        <div class="nav">
+          <ul class="flex-container spaced">
+            <li id="languages" class="skills even-special"><a href="#">Languages</a>
+              <ul>
+                <li class="sub-lang"><a href="#">Python</a></li>
+                <li class="sub-lang"><a href="#">R</a></li>
+                <li class="sub-lang"><a href="#">PostgreSQL</a></li>
+                <li class="sub-lang"><a href="#">HTML, CSS, JavaScript</a></li>
+                <li class="sub-lang"><a href="#">AJAX, jQuery</a></li>
+                <li class="sub-lang"><a href="#">Rails, Ruby, Ruby on Rails</a></li>
+                <li class="sub-lang"><a href="#">Node.js</a></li>
+                <li class="sub-lang"><a href="#">React</a></li>
+              </ul>
+            </li>
+              <li id="frameworks" class="skills even-one"><a href="#">Frameworks</a>
+                <ul>
+                  <li class="sub-frame"><a href="#">Flask</a></li>
+                  <li class="sub-frame"><a href="#">Django</a></li>
+                  <li class="sub-frame"><a href="#">Shiny</a></li>
+                  <li class="sub-frame"><a href="#">Flexdashboard</a></li>
+                </ul>
+              </li>
+              <li id="tools" class="skills even-one"><a href="#">Tools</a>
+                <ul>
+                  <li class="sub-tools">Atom</li>
+                  <li class="sub-tools">Bootstrap</li>
+                  <li class="sub-tools">GitHub</li>
+                  <li class="sub-tools">PyCharm</li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+        <button>That's about it...but if you want to read more...</button>
+    </article>
+
+    <article class="col-third">
+      <h2>Interests</h2>
+      <div class="nav">
+      <ul class="spaced">
+        <li class="hoverable even">Game Theory</li>
+        <li id="sports" class="skills"><a href="#">Sports</a>
+          <ul>
+            <li class="sub-sport">Soccer</li>
+            <li class="sub-sport">Tennis</li>
+            <li class="sub-sport">Other Sports</li>
+          </ul>
+        </li>
+        <li class="hoverable even">Mindfulness</li>
+      </ul>
+    </div>
+    </article>
+
+    <article class="col-third">
+      <h2>Testimonials</h2>
+      <div class="nav">
+      <ul class="spaced">
+        <li class="skills even-two"><a href="#">Justin</li>
+        <li class="skills even-two"><a href="#">Kay</li>
+        <li class="skills even-two"><a href="#">Stephanie</li>
+        <li class="skills even-two"><a href="#">My Mom</li>
+        <li class="skills even-two"><a href="#">Random Compliment Generator</li>
+      </ul>
+    </div>
+    </article>
+  </div>
 
 </body>
 </html>

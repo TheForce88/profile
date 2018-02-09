@@ -1,0 +1,129 @@
+/* ----------------------------------------
+   Global
+------------------------------------------- */
+
+body{
+  font-family: "Source Code Pro", sans-serif;
+  color: #d4e3f2;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url("../img/background_7.jpg");
+  margin: 25px;
+}
+
+/* ----------------------------------------
+   Columns
+------------------------------------------- */
+
+.grid-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.col-third {
+  width: 25%;
+  padding: 20px;
+  background: #495c6f;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* ----------------------------------------
+   nav
+------------------------------------------- */
+
+li  {
+  line-height: 20px;
+}
+
+.skills {
+  line-height: 35px;
+}
+.nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+.hoverable:hover {
+  background-color: #207f9d;
+  line-height: 35px;
+}
+
+.nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+.nav li li {
+  font-size: .8em;
+}
+
+.nav {
+  height: 400px;
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+/*.flex-container {
+  display: flex;
+  flex-direction: column;
+}*/
+
+.spaced {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.spaced .even-special {
+  margin: 10px 0 50px 0;
+}
+
+.spaced .even-one {
+  margin: 20px 0 20px 0;
+}
+
+.spaced .even {
+  margin: 50px 0 50px 0;
+}
+
+.spaced .even-two {
+  margin: 20px 0 20px 0;
+}
+
+/*.sub-sport {
+  margin: 15px;
+}*/
+
+p {
+  text-align: center;
+}
