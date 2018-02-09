@@ -11,6 +11,7 @@ body{
   ),
   url("../img/background_7.jpg");
   margin: 25px;
+  padding-left: 80px;
 }
 
 /* ----------------------------------------
@@ -34,9 +35,13 @@ body{
 
 .col-third {
   width: 25%;
-  padding: 20px;
+  padding: 15px 10px 15px 10px;
   background: #495c6f;
   font-size: 20px;
+  opacity: 0.7;
+}
+article, h2, a, .hoverable {
+  border-radius: 5px;
 }
 
 h2 {
@@ -46,6 +51,7 @@ h2 {
   margin: 1px;
   border-color: 1px #000000;
   box-shadow: 0 15px 15px black;
+  border-radius: 5px;
 }
 
 .box-one {
@@ -103,6 +109,12 @@ li  {
   text-decoration: none;
   color: #ffffff;
   display: block;
+  transition: .3s background-color;
+  transition: 0.5s;
+  transition-timing-function: linear;
+}
+
+.hoverable {
   transition: .3s background-color;
   transition: 0.5s;
   transition-timing-function: linear;
