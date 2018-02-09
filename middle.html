@@ -11,20 +11,101 @@
 </head>
 
 <body>
-  <header>
-    <article>
+  <header id="matrix" class="site-intro">
+    <article class="site-intro">
       <!-- <button onclick="typeWriter()">Click me</button>
       <p id="welcome"></p> -->
-      <a href="#">Hello World...<span class="cursor"> </span>
+      <a href="#">Hello World....<span class="cursor"> </span>
+    </article>
+    <article class="site-intro">
+      <div id="outer">
+        <div class="button-style">
+          <button class="header-button">Press Here to Enter</button>
+        </div>
+      </div>
     </article>
   </header>
   <main>
-    <div id="outer">
-      <div class="button-style">
-        <button>Press Here to Enter</button>
-      </div>
+
+  <!--end of "first page"-->
+
+    <section class="second-page">
+      <nav></nav>
+
+    <!--disable "floating" on hover-->
+
+      <div class="grid-wrapper articles">
+        <article class="col-third box-one">
+            <h2>Skills</h2> <!--why is the internet putting this in an "a" tag?-->
+            <div class="nav">
+              <ul class="flex-container spaced">
+                <li id="languages" class="skills even-special"><a href="#">Languages</a>
+                  <ul>
+                    <li class="sub-lang"><a href="#">Python</a></li>
+                    <li class="sub-lang"><a href="#">R</a></li>
+                    <li class="sub-lang"><a href="#">PostgreSQL</a></li>
+                    <li class="sub-lang"><a href="#">HTML, CSS, JavaScript</a></li>
+                    <li class="sub-lang"><a href="#">AJAX, jQuery</a></li>
+                    <li class="sub-lang"><a href="#">Rails, Ruby, Ruby on Rails</a></li>
+                    <li class="sub-lang"><a href="#">Node.js</a></li>
+                    <li class="sub-lang"><a href="#">React</a></li>
+                  </ul>
+                </li>
+                  <li id="frameworks" class="skills even-one"><a href="#">Frameworks</a>
+                    <ul>
+                      <li class="sub-frame"><a href="#">Flask</a></li>
+                      <li class="sub-frame"><a href="#">Django</a></li>
+                      <li class="sub-frame"><a href="#">Shiny</a></li>
+                      <li class="sub-frame"><a href="#">Flexdashboard</a></li>
+                    </ul>
+                  </li>
+                  <li id="tools" class="skills even-one"><a href="#">Tools</a>
+                    <ul>
+                      <li class="sub-tools">Atom</li>
+                      <li class="sub-tools">Bootstrap</li>
+                      <li class="sub-tools">GitHub</li>
+                      <li class="sub-tools">PyCharm</li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+            <button>More??...</button>
+        </article>
+
+        <article class="col-third box-two">
+          <h2>Interests</h2>
+          <div class="nav">
+          <ul class="spaced">
+            <li class="hoverable even">Game Theory</li>
+            <li id="sports" class="skills"><a href="#">Sports</a>
+              <ul>
+                <li class="sub-sport">Soccer</li>
+                <li class="sub-sport">Tennis</li>
+                <li class="sub-sport">Other Sports</li>
+              </ul>
+            </li>
+            <li class="hoverable even">Mindfulness</li>
+          </ul>
+        </div>
+        </article>
+
+        <article class="col-third box-three">
+          <h2>Testimonials</h2>
+            <div class="nav">
+              <ul class="spaced">
+                <li class="skills even-two"><a href="#">Justin</li>
+                <li class="skills even-two"><a href="#">Kay</li>
+                <li class="skills even-two"><a href="#">Stephanie</li>
+                <li class="skills even-two"><a href="#">My Mom</li>
+                <li class="skills even-two"><a href="#">Random Compliment Generator</li>
+              </ul>
+            </div>
+        </article>
+      </section>
+
+      <!--end of second page-->
     </div>
-  </main>
+    </main>
 
 </body>
 <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>

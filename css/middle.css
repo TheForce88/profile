@@ -1,14 +1,26 @@
-* {
+html {
+  background-color: #000000;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  margin-left: -1px;
+}
+
+main {
+  width: 100%;
+  margin-left: -1px;
+}
+
+header, .site-intro {
+  color: #00ff00;
   background-color: #000000;
   font-family: "Source Code Pro", sans-serif;
   font-size: 30px;
 }
 
-body {
-  color: #00ff00;
-}
-
-a {
+.site-intro a {
   position: relative;
   text-decoration: none;
   color: #00ff00;
@@ -24,9 +36,9 @@ a {
   background: #000000;
   box-sizing: border-box;
   border-left: .5em solid;
-  animation: typing 3s steps(14, end),
+  animation: typing 3s steps(15, end),
     blinking 1s step-end 3s;
-  -webkit-animation: typing 3s steps(14, end),
+  -webkit-animation: typing 3s steps(15, end),
     blinking 1s step-end infinite;
 }
 
@@ -52,16 +64,19 @@ a {
     50% { border-color: #00ff00; }
 }
 
-main {
+/*header {
   display: flex;
   justify-content: center;
   margin-top: 250px;
-}
+}*/
 
-button {
+.header-button {
   border: none;
   padding: 50px;
   color: #00ff00;
+  background-color: #000000;
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 30px;
   /*font-size: 20px;*/
   text-align: center;
   animation-name: floating;
@@ -78,14 +93,204 @@ button {
   to { transform: translate(0, -0px); }
 }
 
-button:hover {
+.header-button:hover {
   box-shadow:  0 2px 15px white;
   transition: 2s ease;
   -webkit-transition: 2s ease;
 }
 
 
-div {
+.button-style {
   border-radius: 25%;
   border-style: 1px #00ff00;
+  text-align: center;
+  margin-top: 250px;
+}
+
+/* ----------------------------------------
+   second page
+------------------------------------------- */
+
+.second-page {
+  font-family: "Source Code Pro", sans-serif;
+  color: #d4e3f2;
+}
+
+/* ----------------------------------------
+   Columns
+------------------------------------------- */
+
+.grid-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.grid-wraper article {
+  display: flex;
+}
+
+.col-third {
+  width: 28%;
+  padding: 15px 10px 15px 10px;
+  background: #495c6f;
+  font-size: 20px;
+  opacity: 0.7;
+}
+.second-article, h2, a, .hoverable {
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  background-color: #005f5f;
+  padding: 15px 0 15px 0;
+  margin: 1px;
+  border-color: 1px #000000;
+  box-shadow: 0 15px 15px black;
+  border-radius: 5px;
+}
+
+.box-one {
+  animation-name: floating;
+  animation-duration: 6.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border-color: 1px #000000;
+  box-shadow: 0 15px 15px black;
+}
+
+.box-two {
+  animation-name: floating;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border-color: 1px #000000;
+  box-shadow: 0 15px 15px black;
+}
+
+.box-three {
+  animation-name: floating;
+  animation-duration: 8.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border-color: 1px #000000;
+  box-shadow: 0 15px 15px black;
+}
+
+/*.box-three:hover {
+  animation-duration: 20s;
+  animation-iteration-count: 1;
+}*/
+
+@keyframes floating {
+  from { transform: translate(0, 0px); }
+  65% { transform: translate(0, 30px); }
+  to { transform: translate(0, -0px); }
+}
+
+/* ----------------------------------------
+   nav
+------------------------------------------- */
+
+li  {
+  line-height: 20px;
+}
+
+.skills {
+  line-height: 35px;
+}
+.nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  transition: .3s background-color;
+  transition: 0.5s;
+  transition-timing-function: linear;
+}
+
+.hoverable {
+  transition: .3s background-color;
+  transition: 0.5s;
+  transition-timing-function: linear;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+  border-color: 1px #000000;
+  box-shadow: 0 15px 15px black;
+}
+
+.hoverable:hover {
+  background-color: #207f9d;
+  line-height: 35px;
+  border-color: 1px #000000;
+  box-shadow: 0 15px 15px black;
+}
+
+.nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+.nav li li {
+  font-size: .8em;
+}
+
+.nav {
+  height: 400px;
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+/*.flex-container {
+  display: flex;
+  flex-direction: column;
+}*/
+
+.spaced {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.spaced .even-special {
+  margin: 30px 0 50px 0;
+}
+
+.spaced .even-one {
+  margin: 15px 0 20px 0;
+}
+
+.spaced .even {
+  margin: 50px 0 50px 0;
+}
+
+.spaced .even-two {
+  margin: 20px 0 20px 0;
+}
+
+/*.sub-sport {
+  margin: 15px;
+}*/
+
+p {
+  text-align: center;
 }
