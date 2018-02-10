@@ -50,14 +50,19 @@ color: white;
 line-height: 3em;
 }
 
+/*change style on aside to just nav or new div within aside*/
+/*change flex to rows or colums so that div appears on far left and nav appears "right", next to it*/
+/*fix height too*/
 aside {
-  position: fixed;
+  position: flex;
   margin-top: 3em;
   padding: 4em;
   width: 17em;
   height: 60em;
   line-height: 5em;
   border-right: .18em solid blue;
+  background-color: #2D648A;
+  opacity: 0.6;
 }
 
 aside a {

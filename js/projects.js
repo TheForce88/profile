@@ -11,8 +11,12 @@ $(document).ready(function() {
     });
   });
 
+// fix toggle so that bar slides out when you hover over "bar" div seperate from nav inside aside
+ $('aside').hide().delay(900).fadeIn(2000);
 
-
+//  $(document).hover(function() {
+//   $( "aside" ).toggle( "slide" );
+// });
 
 
 });
