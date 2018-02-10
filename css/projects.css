@@ -1,0 +1,135 @@
+/* ----------------------------------------
+   global
+------------------------------------------- */
+html {
+  background-image: url("../img/hot_air_balloon2.jpg");
+  background: cover;
+  background-repeat: no-repeat;
+  background-size: 1700px 800px;
+}
+
+* {
+  font-family: "monospace", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p{
+  text-align: justify;
+  line-height: 1.5em;
+  padding: 1em;
+}
+
+span a {
+  font-size: 1.3em;
+  padding: 4em 2em 6em 2em;
+  display: inline-block;
+  color: black;
+}
+
+#webdev {
+  width: 100%;
+}
+
+/* ----------------------------------------
+   body
+------------------------------------------- */
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+font-size: 3em;
+color: white;
+line-height: 3em;
+}
+
+aside {
+  position: fixed;
+  margin-top: 3em;
+  padding: 4em;
+  width: 17em;
+  height: 60em;
+  line-height: 5em;
+  border-right: .18em solid blue;
+}
+
+aside a {
+  color: white;
+}
+
+aside nav a {
+  font-size: 1.5em;
+  padding-top: 1em;
+}
+
+/* ----------------------------------------
+   main
+------------------------------------------- */
+
+main {
+  margin-left: 17em;
+  text-align: center;
+  width: 100%;
+}
+
+section {
+  display: none;
+}
+
+section nav {
+  position: fixed;
+  top: 0;
+  text-align: left;
+  padding: 4em 0 2em 2em;
+  background-color: blue;
+  width: 100%;
+  z-index: 1;
+}
+
+section nav a {
+  padding-left: 1.5em;
+  color: black;
+}
+
+article {
+  padding-top: 4em;
+  display: none;
+  margin: 0 auto;
+}
+
+#projectshome div {
+  margin: 2% 0 0 2%;
+  background-color: grey;
+  background-size: cover;
+  background-position: center;
+  width: 30.5%;
+}
+
+#projectshome div p
+{
+  margin-top: 35%;
+}*/
+
+/*add screenshots of projects*/
+/*#projectshomeone {
+  background-image: url("../img/game.jpg");
+}
+
+#projectshometwo {
+  background-image: url("../img/monument.jpg");
+}
+
+#projectshomethree {
+  background-image: url("../img/shoppingcart.jpg");
+}
+
+#projectshomefour {
+  background-image: url("../img/geoquakes.jpg");
+}*/
