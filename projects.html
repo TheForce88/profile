@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>projects</title>
   <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet'>
-  <link rel="stylesheet" href="css/fontawesome/fontawesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/fontawesome/fontawesome.min.css">
   <link rel="stylesheet" href="css/projects.css">
   <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
   <script src="js/projects.js" charset="utf-8"></script>
@@ -27,44 +28,49 @@
   <main>
     <section id="webdev">
       <header>
-        <nav>
+
+        <nav class="sectionhome">
           <a href="#projectone">Monument</a>
           <a href="#projecttwo">Racer Game</a>
           <a href="#projectthree">Shopping Cart</a>
           <a href="#projectfour">Geoquakes</a>
         </nav>
-      </header>
-        <div class="sectionhome" id="projectshome">
+
+        <!-- <div class="sectionhome" id="projectshome">
           <div id="projectshomeone"><a href="#projectone"><p>Monument</p></a></div>
           <div id="projectshometwo"><a href="#projecttwo"><p>Racer Game</p></a></div>
           <div id="projectshomethree"><a href="#projectthree"><p>Shopping Cart</p></a></div>
           <div id="projectshomefour"><a href="#projectfour"><p>Geoquakes</p></a></div>
+        </div> -->
+      </header>
+      <div class="grid-wrapper">
+        <div class="inner-wrapper">
+          <article id="projectone" class="project">
+            <h4>Monument</h4>
+            <img src="img/mountain2.png" alt="mountain silhouette">
+            <p>Recreated a blog page from a snapshot of the actual page</p>
+            <span><a href="https://github.com/TheForce88">GitHub</a></span>
+          </article>
+          <article id="projecttwo" class="project">
+            <h4>Racer Game</h4>
+            <i class="fa fa-car"></i>
+            <p>Created a simple racing game using CSS and HTML</p>
+            <span><a href="https://github.com/TheForce88">GitHub</a></span>
+          </article>
+          <article id="projectthree" class="project">
+            <h4>Shopping Cart</h4>
+            <i class="fa fa-shopping-cart"></i>
+            <p>Demonstrates use of jquery to manipulate DOM</p>
+            <span><a href="https://github.com/TheForce88">GitHub</a></span>
+          </article>
+          <article id="projectfour" class="project">
+            <h4>Geoquakes</h4>
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <p>Earthquake app</p>
+            <span><a href="https://github.com/TheForce88">GitHub</a></span>
+          </article>
         </div>
-
-      <article id="projectone">
-        <h4>Monument</h4>
-        <!-- <img/monument.jpg> -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <span><a href="https://github.com/TheForce88">GitHub</a></span>
-      </article>
-      <article id="projecttwo">
-        <h4>Racer Game</h4>
-        <!-- <img/monument.jpg> -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <span><a href="https://github.com/TheForce88">GitHub</a></span>
-      </article>
-      <article id="projectthree">
-        <h4>Shopping Cart</h4>
-        <!-- <img/monument.jpg> -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <span><a href="https://github.com/TheForce88">GitHub</a></span>
-      </article>
-      <article id="projectfour">
-        <h4>Geoquakes</h4>
-        <!-- <img/monument.jpg> -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <span><a href="https://github.com/TheForce88">GitHub</a></span>
-      </article>
+      </div>
 
     </section>
   </main>

@@ -17,18 +17,21 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-
-p{
-  text-align: justify;
+h4 {
+  font-size: 1.6em;
+}
+p {
   line-height: 1.5em;
-  padding: 1em;
+  padding: 0 1em 1em 1em;
+  font-size: 1.2em;
+  min-height: 7em;
 }
 
 span a {
-  font-size: 1.3em;
-  padding: 4em 2em 6em 2em;
-  display: inline-block;
-  color: black;
+  display: block;
+  font-size: 1em;
+  /*display: inline-block;*/
+  color: gray;
 }
 
 #webdev {
@@ -56,8 +59,8 @@ line-height: 3em;
 aside {
   position: flex;
 
-  padding: 4em;
-  width: 19em;
+  padding: 3em;
+  width: 21em;
   height: 55em;
   line-height: 5em;
   border-right: .10em solid #b6d7ee;
@@ -79,48 +82,108 @@ aside nav a {
 ------------------------------------------- */
 
 main {
-  margin-left: 17em;
+  margin-left: 1em;
   text-align: center;
   width: 100%;
 }
 
 section {
-  display: none;
+  /*display: none;*/
 }
 
 section nav {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
-  text-align: left;
-  padding: 4em 0 2em 2em;
-  background-color: blue;
+  text-align: center;
+  padding: 6.5em 0 2em 2em;
   width: 100%;
   z-index: 1;
+  opacity: 0.6;
 }
 
 section nav a {
-  padding-left: 1.5em;
-  color: black;
+  transition: .3s background-color;
+  transition: 0.5s;
+  transition-timing-function: linear;
+}
+
+section nav a:hover {
+  border-color: 1px #000000;
+  box-shadow: 0 10px 10px #2D648A;
+}
+
+div .sectionhome {
+  /*position: fixed;*/
+  top: 0;
+  text-align: left;
+  padding: 4em 0 2em 2em;
+  background-color: #2D648A;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+section nav a {
+  font-size: 1.5em;
+  padding: 0 1em;
+  color: #ffffff;
+}
+
+.grid-warpper {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-wrapper .inner-wrapper {
+  display: flex;
+}
+
+.inner-wraper {
+  flex-wrap: wrap;
+}
+
+.project {
+  /*flex-direction: row;*/
+  width: 30%;
+  margin: 0.5em;
+  height: 22em;
 }
 
 article {
-  padding-top: 4em;
-  display: none;
-  margin: 0 auto;
+  padding-top: 2em;
+  /*display: none;*/
+  /*margin: 0 auto;*/
+  /*height: 5em;*/
+  color: #ffffff;
+  background-color: #2D648A;
+  opacity: 0.6;
 }
 
-#projectshome div {
+/*article #project {
+  display: block;
+}*/
+
+/*#projectshome div {
   margin: 2% 0 0 2%;
   background-color: grey;
   background-size: cover;
   background-position: center;
   width: 30.5%;
+}*/
+
+#projectshome div p {
+  margin-top: 35%;
 }
 
-#projectshome div p
-{
-  margin-top: 35%;
-}*/
+article img {
+  width: 10em;
+  height: 7em;
+}
+
+.fa {
+  font-size: 4em;
+  line-height: 1.9em;
+}
 
 /*add screenshots of projects*/
 /*#projectshomeone {
