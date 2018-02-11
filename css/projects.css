@@ -5,11 +5,11 @@ html {
   background-image: url("../img/hot_air_balloon2.jpg");
   background: cover;
   background-repeat: no-repeat;
-  background-size: 1700px 800px;
+  background-size: 1700px 950px;
 }
 
 * {
-  font-family: "monospace", sans-serif;
+  font-family: "Source Code Pro", sans-serif;
   font-size: 14px;
   font-weight: 300;
   text-decoration: none;
@@ -55,12 +55,12 @@ line-height: 3em;
 /*fix height too*/
 aside {
   position: flex;
-  margin-top: 3em;
+
   padding: 4em;
-  width: 17em;
-  height: 60em;
+  width: 19em;
+  height: 55em;
   line-height: 5em;
-  border-right: .18em solid blue;
+  border-right: .10em solid #b6d7ee;
   background-color: #2D648A;
   opacity: 0.6;
 }
