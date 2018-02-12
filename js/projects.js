@@ -24,13 +24,24 @@ $(document).ready(function() {
   $("aside nav a").each(function() {
     $(this).on("click", function() {
     //console.log("working!");
-    var sectionID = $(this).attr("href");
-    console.log(sectionID);
+    var sectionId = $(this).attr("href");
+    console.log(sectionId);
     $("section, article").hide();
-    $(sectionID).show();
-    $(".sectionhome").show();
-    $('article').show();
+    $(sectionId).show();
+    $(".sectionhome").fadeIn();
     })
   });
 
+  $(".sectionhome a").each(function() {
+    $(this).on("click", function() {
+    var test = $("a");
+    console.log(test);
+    var subSecId = $(".sectionhome").children().attr("href");
+    console.log(subSecId);
+    // $("section, article").hide();
+    $(subSecId).show();
+    })
+  });
+
+    // $('article').show();
 });
