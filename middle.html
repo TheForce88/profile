@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="css/fontawesome/fontawesome.css">
   <link rel="stylesheet" href="css/middle.css">
 </head>
-
 <body>
   <header id="matrix" class="site-intro">
     <article class="site-intro">
       <!-- <button onclick="typeWriter()">Click me</button>
       <p id="welcome"></p> -->
-      <a href="#">Hello World....<span class="cursor"> </span>
+      <a href="#">Hello World....<span class="cursor"> </span></a>
+      <!--TODO: The above ^ "a" tag was still open, which is why the "skills" h2 was being lumped in with it. -->
     </article>
     <article class="site-intro">
       <div id="outer">
@@ -30,7 +30,6 @@
   <!--end of "first page"-->
 
     <section class="second-page">
-      <nav></nav>
 
     <!--disable "floating" on hover-->
 
@@ -93,11 +92,12 @@
           <h2>Testimonials</h2>
             <div class="nav">
               <ul class="spaced">
-                <li class="skills even-two"><a href="#">Justin</li>
-                <li class="skills even-two"><a href="#">Kay</li>
-                <li class="skills even-two"><a href="#">Stephanie</li>
-                <li class="skills even-two"><a href="#">My Mom</li>
-                <li class="skills even-two"><a href="#">Random Compliment Generator</li>
+                <!-- TODO: There were a bunch of open "a" tags which were making the inspector look really interesting!-->
+                <li class="skills even-two"><a href="#">Justin</a></li>
+                <li class="skills even-two"><a href="#">Kay</a></li>
+                <li class="skills even-two"><a href="#">Stephanie</a></li>
+                <li class="skills even-two"><a href="#">My Mom</a></li>
+                <li class="skills even-two"><a href="#">Random Compliment Generator</a></li>
               </ul>
             </div>
         </article>
@@ -106,8 +106,9 @@
       <!--end of second page-->
     </div>
     </main>
-
+    <!-- TODO: Best practice is to include your script tags in the head of your html. This will work if your jquery is waiting for the document to be "ready" before it does work on it.-->
+    <!--TODO: If you do include them at the bottom of the file, technically they should be right before the closing "body" tag-->
+    <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="js/middle.js" charset="utf-8"></script>
 </body>
-<script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
-<script src="js/middle.js" charset="utf-8"></script>
 </html>
